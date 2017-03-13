@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDA47253C7CCD5863AD5AFD2 /* Pods_WeatherTalentoMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF851D4723157D817C4B77B4 /* Pods_WeatherTalentoMobile.framework */; };
+		EB154DE71E77183D00F448A6 /* UIViewController+GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB154DE61E77183D00F448A6 /* UIViewController+GenericError.swift */; };
+		EB3345951E7420AF006A3163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3345941E7420AF006A3163 /* AppDelegate.swift */; };
+		EB3345971E7420AF006A3163 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3345961E7420AF006A3163 /* SearchViewController.swift */; };
+		EB33459A1E7420AF006A3163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3345981E7420AF006A3163 /* Main.storyboard */; };
+		EB33459C1E7420AF006A3163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB33459B1E7420AF006A3163 /* Assets.xcassets */; };
+		EB33459F1E7420AF006A3163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB33459D1E7420AF006A3163 /* LaunchScreen.storyboard */; };
+		EB72E2E71E74279800476A1F /* Fachada.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72E2E61E74279800476A1F /* Fachada.swift */; };
+		EB72E2E91E7427A700476A1F /* UserCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72E2E81E7427A700476A1F /* UserCases.swift */; };
+		EB72E2EC1E7428EB00476A1F /* APIProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB72E2EB1E7428EB00476A1F /* APIProperties.plist */; };
+		EB72E2EE1E742F5200476A1F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72E2ED1E742F5200476A1F /* SearchViewModel.swift */; };
+		EB91AA7E1E76011600016832 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91AA7D1E76011600016832 /* Fonts.swift */; };
+		EB91AA801E76062500016832 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB91AA7F1E76062500016832 /* Roboto-Regular.ttf */; };
+		EBABF49E1E75F6A900401DDC /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBABF4991E75F6A800401DDC /* Roboto-Black.ttf */; };
+		EBABF49F1E75F6A900401DDC /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBABF49A1E75F6A800401DDC /* Roboto-Bold.ttf */; };
+		EBABF4A01E75F6A900401DDC /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBABF49B1E75F6A800401DDC /* Roboto-Light.ttf */; };
+		EBABF4A11E75F6A900401DDC /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBABF49C1E75F6A900401DDC /* Roboto-Thin.ttf */; };
+		EBABF4A21E75F6A900401DDC /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBABF49D1E75F6A900401DDC /* Roboto-Medium.ttf */; };
+		EBCC88331E75876100E6FA2D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCC88321E75876100E6FA2D /* Location.swift */; };
+		EBCC88371E75979A00E6FA2D /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCC88361E75979A00E6FA2D /* Weather.swift */; };
+		EBCC88391E75A64400E6FA2D /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCC88381E75A64400E6FA2D /* SelectLocationViewController.swift */; };
+		EBCC883C1E75A6ED00E6FA2D /* SelectLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCC883B1E75A6ED00E6FA2D /* SelectLocationViewModel.swift */; };
+		EBCC883E1E75A70C00E6FA2D /* ShowDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCC883D1E75A70C00E6FA2D /* ShowDataViewController.swift */; };
+		EBCC88411E75A8EA00E6FA2D /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCC88401E75A8EA00E6FA2D /* UIViewController+ActivityIndicator.swift */; };
+		EBCC88451E75ACA300E6FA2D /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCC88441E75ACA300E6FA2D /* UIImage+Gif.swift */; };
+		EBCC88471E75AEF000E6FA2D /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = EBCC88461E75AEF000E6FA2D /* loading.gif */; };
+		EBCC88491E75B87400E6FA2D /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCC88481E75B87400E6FA2D /* LocationTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		010176AE9BFD943ECAB2DE89 /* Pods-WeatherTalentoMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTalentoMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherTalentoMobile/Pods-WeatherTalentoMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		9C86722B43D3F6C88EC7DC7B /* Pods-WeatherTalentoMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTalentoMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherTalentoMobile/Pods-WeatherTalentoMobile.release.xcconfig"; sourceTree = "<group>"; };
+		BF851D4723157D817C4B77B4 /* Pods_WeatherTalentoMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherTalentoMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB154DE61E77183D00F448A6 /* UIViewController+GenericError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+GenericError.swift"; sourceTree = "<group>"; };
+		EB3345911E7420AF006A3163 /* WeatherTalentoMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTalentoMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3345941E7420AF006A3163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB3345961E7420AF006A3163 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EB3345991E7420AF006A3163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB33459B1E7420AF006A3163 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB33459E1E7420AF006A3163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB3345A01E7420AF006A3163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB72E2E61E74279800476A1F /* Fachada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fachada.swift; sourceTree = "<group>"; };
+		EB72E2E81E7427A700476A1F /* UserCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCases.swift; sourceTree = "<group>"; };
+		EB72E2EB1E7428EB00476A1F /* APIProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIProperties.plist; sourceTree = "<group>"; };
+		EB72E2ED1E742F5200476A1F /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		EB91AA7D1E76011600016832 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		EB91AA7F1E76062500016832 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		EBABF4991E75F6A800401DDC /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		EBABF49A1E75F6A800401DDC /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		EBABF49B1E75F6A800401DDC /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		EBABF49C1E75F6A900401DDC /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		EBABF49D1E75F6A900401DDC /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		EBCC88321E75876100E6FA2D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EBCC88361E75979A00E6FA2D /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		EBCC88381E75A64400E6FA2D /* SelectLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
+		EBCC883B1E75A6ED00E6FA2D /* SelectLocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLocationViewModel.swift; sourceTree = "<group>"; };
+		EBCC883D1E75A70C00E6FA2D /* ShowDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDataViewController.swift; sourceTree = "<group>"; };
+		EBCC88401E75A8EA00E6FA2D /* UIViewController+ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		EBCC88441E75ACA300E6FA2D /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		EBCC88461E75AEF000E6FA2D /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		EBCC88481E75B87400E6FA2D /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB33458E1E7420AF006A3163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA47253C7CCD5863AD5AFD2 /* Pods_WeatherTalentoMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6253F3F1E82F1A5817D2E3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF851D4723157D817C4B77B4 /* Pods_WeatherTalentoMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA58D17E8B7C4F1A4412018D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				010176AE9BFD943ECAB2DE89 /* Pods-WeatherTalentoMobile.debug.xcconfig */,
+				9C86722B43D3F6C88EC7DC7B /* Pods-WeatherTalentoMobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB3345881E7420AF006A3163 = {
+			isa = PBXGroup;
+			children = (
+				EB3345931E7420AF006A3163 /* WeatherTalentoMobile */,
+				EB3345921E7420AF006A3163 /* Products */,
+				EA58D17E8B7C4F1A4412018D /* Pods */,
+				D6253F3F1E82F1A5817D2E3D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB3345921E7420AF006A3163 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB3345911E7420AF006A3163 /* WeatherTalentoMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB3345931E7420AF006A3163 /* WeatherTalentoMobile */ = {
+			isa = PBXGroup;
+			children = (
+				EB72E2DF1E74267900476A1F /* Resources */,
+				EB72E2DE1E74266E00476A1F /* Supporting Files */,
+				EB72E2DD1E74265F00476A1F /* Code */,
+			);
+			path = WeatherTalentoMobile;
+			sourceTree = "<group>";
+		};
+		EB72E2DD1E74265F00476A1F /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				EB72E2E31E7426D500476A1F /* Model */,
+				EB72E2E21E7426CD00476A1F /* Modules */,
+				EB72E2E11E7426C700476A1F /* API */,
+				EB72E2E01E7426A500476A1F /* AppDelegate */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		EB72E2DE1E74266E00476A1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB3345A01E7420AF006A3163 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB72E2DF1E74267900476A1F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBABF4981E75F64600401DDC /* Fonts */,
+				EBCC883F1E75A8D500E6FA2D /* Utils */,
+				EB72E2EA1E7428AE00476A1F /* Properties */,
+				EB33459B1E7420AF006A3163 /* Assets.xcassets */,
+				EB33459D1E7420AF006A3163 /* LaunchScreen.storyboard */,
+				EB3345981E7420AF006A3163 /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EB72E2E01E7426A500476A1F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EB3345941E7420AF006A3163 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EB72E2E11E7426C700476A1F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EB72E2E61E74279800476A1F /* Fachada.swift */,
+				EB72E2E81E7427A700476A1F /* UserCases.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		EB72E2E21E7426CD00476A1F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EB72E2E51E74271700476A1F /* ShowData */,
+				EB72E2E41E74270700476A1F /* CitySelection */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		EB72E2E31E7426D500476A1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBCC88321E75876100E6FA2D /* Location.swift */,
+				EBCC88361E75979A00E6FA2D /* Weather.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EB72E2E41E74270700476A1F /* CitySelection */ = {
+			isa = PBXGroup;
+			children = (
+				EB3345961E7420AF006A3163 /* SearchViewController.swift */,
+				EB72E2ED1E742F5200476A1F /* SearchViewModel.swift */,
+				EBCC88381E75A64400E6FA2D /* SelectLocationViewController.swift */,
+				EBCC883B1E75A6ED00E6FA2D /* SelectLocationViewModel.swift */,
+				EBCC88481E75B87400E6FA2D /* LocationTableViewCell.swift */,
+			);
+			name = CitySelection;
+			sourceTree = "<group>";
+		};
+		EB72E2E51E74271700476A1F /* ShowData */ = {
+			isa = PBXGroup;
+			children = (
+				EBCC883D1E75A70C00E6FA2D /* ShowDataViewController.swift */,
+			);
+			name = ShowData;
+			sourceTree = "<group>";
+		};
+		EB72E2EA1E7428AE00476A1F /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				EB72E2EB1E7428EB00476A1F /* APIProperties.plist */,
+			);
+			name = Properties;
+			sourceTree = "<group>";
+		};
+		EBABF4981E75F64600401DDC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EB91AA7F1E76062500016832 /* Roboto-Regular.ttf */,
+				EBABF4991E75F6A800401DDC /* Roboto-Black.ttf */,
+				EBABF49A1E75F6A800401DDC /* Roboto-Bold.ttf */,
+				EBABF49B1E75F6A800401DDC /* Roboto-Light.ttf */,
+				EBABF49C1E75F6A900401DDC /* Roboto-Thin.ttf */,
+				EBABF49D1E75F6A900401DDC /* Roboto-Medium.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		EBCC883F1E75A8D500E6FA2D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EB91AA7D1E76011600016832 /* Fonts.swift */,
+				EBCC88461E75AEF000E6FA2D /* loading.gif */,
+				EBCC88401E75A8EA00E6FA2D /* UIViewController+ActivityIndicator.swift */,
+				EBCC88441E75ACA300E6FA2D /* UIImage+Gif.swift */,
+				EB154DE61E77183D00F448A6 /* UIViewController+GenericError.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB3345901E7420AF006A3163 /* WeatherTalentoMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3345A31E7420AF006A3163 /* Build configuration list for PBXNativeTarget "WeatherTalentoMobile" */;
+			buildPhases = (
+				18C12406C94CDD700F335772 /* [CP] Check Pods Manifest.lock */,
+				EB33458D1E7420AF006A3163 /* Sources */,
+				EB33458E1E7420AF006A3163 /* Frameworks */,
+				EB33458F1E7420AF006A3163 /* Resources */,
+				CF2DEB16AF8C2B0F63A312EE /* [CP] Embed Pods Frameworks */,
+				C6DF7DB9AFE2D03F75AB64DB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherTalentoMobile;
+			productName = WeatherTalentoMobile;
+			productReference = EB3345911E7420AF006A3163 /* WeatherTalentoMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB3345891E7420AF006A3163 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Esther;
+				TargetAttributes = {
+					EB3345901E7420AF006A3163 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EB33458C1E7420AF006A3163 /* Build configuration list for PBXProject "WeatherTalentoMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB3345881E7420AF006A3163;
+			productRefGroup = EB3345921E7420AF006A3163 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB3345901E7420AF006A3163 /* WeatherTalentoMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB33458F1E7420AF006A3163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBABF4A21E75F6A900401DDC /* Roboto-Medium.ttf in Resources */,
+				EB91AA801E76062500016832 /* Roboto-Regular.ttf in Resources */,
+				EBABF49F1E75F6A900401DDC /* Roboto-Bold.ttf in Resources */,
+				EB72E2EC1E7428EB00476A1F /* APIProperties.plist in Resources */,
+				EB33459F1E7420AF006A3163 /* LaunchScreen.storyboard in Resources */,
+				EB33459C1E7420AF006A3163 /* Assets.xcassets in Resources */,
+				EBCC88471E75AEF000E6FA2D /* loading.gif in Resources */,
+				EB33459A1E7420AF006A3163 /* Main.storyboard in Resources */,
+				EBABF4A01E75F6A900401DDC /* Roboto-Light.ttf in Resources */,
+				EBABF49E1E75F6A900401DDC /* Roboto-Black.ttf in Resources */,
+				EBABF4A11E75F6A900401DDC /* Roboto-Thin.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18C12406C94CDD700F335772 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6DF7DB9AFE2D03F75AB64DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeatherTalentoMobile/Pods-WeatherTalentoMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF2DEB16AF8C2B0F63A312EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeatherTalentoMobile/Pods-WeatherTalentoMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB33458D1E7420AF006A3163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB91AA7E1E76011600016832 /* Fonts.swift in Sources */,
+				EB72E2EE1E742F5200476A1F /* SearchViewModel.swift in Sources */,
+				EBCC88391E75A64400E6FA2D /* SelectLocationViewController.swift in Sources */,
+				EB72E2E91E7427A700476A1F /* UserCases.swift in Sources */,
+				EBCC883C1E75A6ED00E6FA2D /* SelectLocationViewModel.swift in Sources */,
+				EB72E2E71E74279800476A1F /* Fachada.swift in Sources */,
+				EBCC88491E75B87400E6FA2D /* LocationTableViewCell.swift in Sources */,
+				EB154DE71E77183D00F448A6 /* UIViewController+GenericError.swift in Sources */,
+				EB3345971E7420AF006A3163 /* SearchViewController.swift in Sources */,
+				EBCC88451E75ACA300E6FA2D /* UIImage+Gif.swift in Sources */,
+				EBCC88331E75876100E6FA2D /* Location.swift in Sources */,
+				EBCC883E1E75A70C00E6FA2D /* ShowDataViewController.swift in Sources */,
+				EB3345951E7420AF006A3163 /* AppDelegate.swift in Sources */,
+				EBCC88411E75A8EA00E6FA2D /* UIViewController+ActivityIndicator.swift in Sources */,
+				EBCC88371E75979A00E6FA2D /* Weather.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB3345981E7420AF006A3163 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB3345991E7420AF006A3163 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB33459D1E7420AF006A3163 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB33459E1E7420AF006A3163 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB3345A11E7420AF006A3163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB3345A21E7420AF006A3163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB3345A41E7420AF006A3163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 010176AE9BFD943ECAB2DE89 /* Pods-WeatherTalentoMobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WeatherTalentoMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.WeatherTalentoMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EB3345A51E7420AF006A3163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C86722B43D3F6C88EC7DC7B /* Pods-WeatherTalentoMobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WeatherTalentoMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.WeatherTalentoMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB33458C1E7420AF006A3163 /* Build configuration list for PBXProject "WeatherTalentoMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3345A11E7420AF006A3163 /* Debug */,
+				EB3345A21E7420AF006A3163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3345A31E7420AF006A3163 /* Build configuration list for PBXNativeTarget "WeatherTalentoMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3345A41E7420AF006A3163 /* Debug */,
+				EB3345A51E7420AF006A3163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB3345891E7420AF006A3163 /* Project object */;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>user2</key>
+	<string>demo</string>
+	<key>user1</key>
+	<string>ilgeonamessample</string>
+	<key>infoService</key>
+	<string>/searchJSON</string>
+	<key>weatherService</key>
+	<string>/weatherJSON</string>
+	<key>urlBase</key>
+	<string>http://api.geonames.org</string>
+</dict>
+</plist>
